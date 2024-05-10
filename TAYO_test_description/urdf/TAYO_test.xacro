@@ -1,0 +1,194 @@
+<?xml version="1.0" ?>
+<robot name="TAYO_test" xmlns:xacro="http://www.ros.org/wiki/xacro">
+
+<xacro:include filename="$(find TAYO_test_description)/urdf/materials.xacro" />
+<xacro:include filename="$(find TAYO_test_description)/urdf/TAYO_test.trans" />
+<xacro:include filename="$(find TAYO_test_description)/urdf/TAYO_test.gazebo" />
+<link name="base_link">
+  <inertial>
+    <origin xyz="0.0028803173582110752 0.0 0.18605655046082087" rpy="0 0 0"/>
+    <mass value="6.711469777903136"/>
+    <inertia ixx="0.193004" iyy="0.210744" izz="0.166926" ixy="-0.0" iyz="-0.0" ixz="-0.007867"/>
+  </inertial>
+  <visual>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="0 0 0" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="left_wheel_1">
+  <inertial>
+    <origin xyz="-2.14128073229365e-17 0.03200000000000003 0.0" rpy="0 0 0"/>
+    <mass value="0.7900225877835323"/>
+    <inertia ixx="0.001104" iyy="0.001669" izz="0.001104" ixy="-0.0" iyz="0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.12 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.12 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="right_wheel_1">
+  <inertial>
+    <origin xyz="-2.14128073229365e-17 -0.03200000000000003 0.0" rpy="0 0 0"/>
+    <mass value="0.7900225877835323"/>
+    <inertia ixx="0.001104" iyy="0.001669" izz="0.001104" ixy="-0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 0.12 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 0.12 -0.065" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="lidar_1">
+  <inertial>
+    <origin xyz="0.0 6.153627405534786e-18 0.011250000000000038" rpy="0 0 0"/>
+    <mass value="0.7251346379145354"/>
+    <inertia ixx="0.000267" iyy="0.000267" izz="0.000474" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.1697" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.1697" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="imu_1">
+  <inertial>
+    <origin xyz="0.0 0.0 0.0010000000000000009" rpy="0 0 0"/>
+    <mass value="0.006279999999999978"/>
+    <inertia ixx="0.0" iyy="0.0" izz="0.0" ixy="0.0" iyz="-0.0" ixz="-0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.0 -0.0 -0.217" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.0 -0.0 -0.217" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="camera_1">
+  <inertial>
+    <origin xyz="0.012499999999999983 1.608339750033895e-17 0.0" rpy="0 0 0"/>
+    <mass value="0.13872095061007444"/>
+    <inertia ixx="1.6e-05" iyy="1.5e-05" izz="1.5e-05" ixy="0.0" iyz="0.0" ixz="0.0"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.094 -0.0 -1.12" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.094 -0.0 -1.12" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<link name="actuator_1">
+  <inertial>
+    <origin xyz="0.028488110282179235 -1.0854817842170162e-16 0.31199337976007446" rpy="0 0 0"/>
+    <mass value="14.478426699691301"/>
+    <inertia ixx="0.629374" iyy="0.316333" izz="0.325608" ixy="-0.0" iyz="-0.0" ixz="0.004938"/>
+  </inertial>
+  <visual>
+    <origin xyz="-0.1 -0.0 -0.593" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+    <material name="silver"/>
+  </visual>
+  <collision>
+    <origin xyz="-0.1 -0.0 -0.593" rpy="0 0 0"/>
+    <geometry>
+      <mesh filename="package://TAYO_test_description/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
+    </geometry>
+  </collision>
+</link>
+
+<joint name="회전 1" type="continuous">
+  <origin xyz="0.0 0.12 0.065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="left_wheel_1"/>
+  <axis xyz="0.0 1.0 0.0"/>
+</joint>
+
+<joint name="회전 2" type="continuous">
+  <origin xyz="0.0 -0.12 0.065" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="right_wheel_1"/>
+  <axis xyz="0.0 -1.0 0.0"/>
+</joint>
+
+<joint name="강체 3" type="fixed">
+  <origin xyz="0.0 0.0 0.1697" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="lidar_1"/>
+</joint>
+
+<joint name="강체 4" type="fixed">
+  <origin xyz="0.0 0.0 0.217" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="imu_1"/>
+</joint>
+
+<joint name="강체 5" type="fixed">
+  <origin xyz="-0.006 0.0 0.527" rpy="0 0 0"/>
+  <parent link="actuator_1"/>
+  <child link="camera_1"/>
+</joint>
+
+<joint name="슬라이더 6" type="prismatic">
+  <origin xyz="0.1 0.0 0.593" rpy="0 0 0"/>
+  <parent link="base_link"/>
+  <child link="actuator_1"/>
+  <axis xyz="0.0 0.0 1.0"/>
+  <limit upper="0.0" lower="0.0" effort="100" velocity="100"/>
+</joint>
+
+</robot>
