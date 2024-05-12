@@ -13,14 +13,14 @@
   <visual>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="0 0 0" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/base_link.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -34,14 +34,14 @@
   <visual>
     <origin xyz="-0.0 -0.12 -0.065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.12 -0.065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/left_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -55,14 +55,14 @@
   <visual>
     <origin xyz="-0.0 0.12 -0.065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 0.12 -0.065" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/right_wheel_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -76,14 +76,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 -0.1697" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 -0.1697" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/lidar_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -97,14 +97,14 @@
   <visual>
     <origin xyz="-0.0 -0.0 -0.217" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.0 -0.0 -0.217" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/imu_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -118,14 +118,14 @@
   <visual>
     <origin xyz="-0.094 -0.0 -1.12" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.094 -0.0 -1.12" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/camera_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
@@ -139,51 +139,51 @@
   <visual>
     <origin xyz="-0.1 -0.0 -0.593" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
     <material name="silver"/>
   </visual>
   <collision>
     <origin xyz="-0.1 -0.0 -0.593" rpy="0 0 0"/>
     <geometry>
-      <mesh filename="package://TAYO_test_description/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
+      <mesh filename="file://$(find TAYO_test_description)/meshes/actuator_1.stl" scale="0.001 0.001 0.001"/>
     </geometry>
   </collision>
 </link>
 
-<joint name="회전 1" type="continuous">
+<joint name="Revolute 1" type="continuous">
   <origin xyz="0.0 0.12 0.065" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="left_wheel_1"/>
   <axis xyz="0.0 1.0 0.0"/>
 </joint>
 
-<joint name="회전 2" type="continuous">
+<joint name="Revolute 2" type="continuous">
   <origin xyz="0.0 -0.12 0.065" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="right_wheel_1"/>
   <axis xyz="0.0 -1.0 0.0"/>
 </joint>
 
-<joint name="강체 3" type="fixed">
+<joint name="Rigid 3" type="fixed">
   <origin xyz="0.0 0.0 0.1697" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="lidar_1"/>
 </joint>
 
-<joint name="강체 4" type="fixed">
+<joint name="Rigid 4" type="fixed">
   <origin xyz="0.0 0.0 0.217" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="imu_1"/>
 </joint>
 
-<joint name="강체 5" type="fixed">
+<joint name="Rigid 5" type="fixed">
   <origin xyz="-0.006 0.0 0.527" rpy="0 0 0"/>
   <parent link="actuator_1"/>
   <child link="camera_1"/>
 </joint>
 
-<joint name="슬라이더 6" type="prismatic">
+<joint name="Slider 6" type="prismatic">
   <origin xyz="0.1 0.0 0.593" rpy="0 0 0"/>
   <parent link="base_link"/>
   <child link="actuator_1"/>
